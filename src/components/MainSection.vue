@@ -125,6 +125,63 @@ AI Research</h1></span>
         </div>
     </div>
 </section><br>
+<section>
+<div class="m-5 md:m-18">
+    <div class="">
+        <h1 class="text-xl md:text-5xl font-bold">Let Notion <br> AI handle <br> the busywork.</h1>
+    </div><br>
+    <div class="flex items-center flex-wrap justify-between">
+        <span><h1 class=" text-lg md:text-xl ">Pick a use case to see how Notion <br> does the work for you.</h1>
+        <p class=" font-medium text-lg mt-3 cursor-pointer text-blue-500">Explore more→</p>
+        </span>
+        <span class="order-first md:order-last">
+            <img class="w-80  md:w-130 " src="/images/asset-use-cases.png" alt="">
+        </span>
+    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 p-4 md:p-2 justify-items-center">
+   
+     <div class="text-xl  bg-slate-100 shadow-lg p-5  text-slate-700 shadow-slate-300 rounded-2xl w-full md:w-110 m-3">
+       <a href="https://www.notion.com/product/ai/use-cases/go-from-brainstorm-to-roadmap"><span class="">
+         <h1 class="text-3xl"><i class="fa-solid fa-comment-dots"></i></h1><br>
+        <h1>Go from brainstrom to roadmap→</h1>
+       </span> </a>
+    </div>
+  
+        <div class="text-xl bg-slate-100 shadow-lg p-5 text-slate-700 shadow-slate-300 rounded-2xl w-full md:w-110 m-3">
+       <a href="https://www.notion.com/product/ai/use-cases/turn-meetings-into-social-posts"><span class="">
+         <h1 class="text-3xl"><i class="fa-solid fa-list"></i></h1><br>
+        <h1>Turn meetings into special post→</h1>
+       </span> </a>
+    </div>
+
+      <div class="text-xl bg-slate-100 shadow-lg p-5 text-slate-700 shadow-slate-300 rounded-2xl w-full md:w-110 m-3">
+       <a href="https://www.notion.com/product/ai/use-cases/organize-your-workspace"><span class="">
+         <h1 class="text-3xl"><i class="fa-solid fa-book"></i></h1><br>
+        <h1>Organize your workspace→</h1>
+       </span> </a>
+    </div>
+
+       <div class="text-xl bg-slate-100 shadow-lg p-5 text-slate-700 shadow-slate-300 rounded-2xl w-full md:w-110 m-3">
+       <a href="https://www.notion.com/product/ai/use-cases/onboard-a-new-hire"><span class="">
+         <h1 class="text-3xl"><i class="fa-solid fa-user"></i></h1><br>
+        <h1>Onboard a new hire→</h1>
+       </span> </a>
+    </div>
+    <div class="text-xl bg-slate-100 shadow-lg p-5 text-slate-700 shadow-slate-300 rounded-2xl w-full md:w-110 m-3">
+       <a href="https://www.notion.com/product/ai/use-cases/revise-a-landing-page"><span class="">
+         <h1 class="text-3xl"><i class="fa-solid fa-globe"></i></h1><br>
+        <h1>Revise a landing page→</h1>
+       </span> </a>
+    </div>
+    <div class="text-xl bg-slate-100 shadow-lg p-5 text-slate-700 shadow-slate-300 rounded-2xl w-full md:w-110 m-3">
+       <a href="https://www.notion.com/product/ai/use-cases/plan-an-offsite"><span class="">
+         <h1 class="text-3xl"><i class="fa-solid fa-map"></i></h1><br>
+        <h1>Plane on offsite→</h1>
+       </span> </a>
+    </div>
+</div>
+</section><br>
 </template>
 <script setup>
 import { ref } from 'vue';

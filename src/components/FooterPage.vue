@@ -1,5 +1,5 @@
 <template>
-  <footer class=" bg-white">
+  <footer class="border-t border-slate-300 bg-white">
     <div class="max-w-7xl mx-auto px-6 py-16">
 
       <!-- Logo + Socials -->

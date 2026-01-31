@@ -10,9 +10,9 @@
         </div>
     </nav>
 </header>
-<div class="animation transition-all  z-50 " v-if="trogelmode">
+<div class="animation transition-all top-20 w-full fixed bg-white " v-if="trogelmode">
 <div class="" >
-    <div class="flex flex-col justify-start gap-7 m-2 p-8 font-medium text-3xl">
+    <div class="flex flex-col justify-start gap-2 md:gap-7 m-2 p-8 font-medium text-3xl">
         <h1>Products<i class="fa-solid fa-angle-down text-xl"></i></h1>
         <h1>AI<i class="fa-solid fa-angle-down text-xl"></i></h1>
         <h1>Solutions<i class="fa-solid fa-angle-down text-xl"></i></h1>
@@ -20,11 +20,11 @@
         <h1>Enterprise</h1>
          <h1>Pricing</h1>
     </div>
-</div><br>
+</div><br class="hidden md:block">
 <div class="text-end " >
 
     
-<div class="bg-slate-200/95 md:items-center  m-4 flex-col md:flex-row   md:gap-80    flex items-start w-auto h-60 md:h-50 rounded-3xl">
+<div class="bg-slate-200/95 md:items-center  m-4 flex-col md:flex-row   md:gap-80 gap-0   flex items-start w-auto h-50 md:h-50 rounded-3xl">
     <div class="flex gap-2 items-center m-4 "><span class="text-2xl md:text-7xl p-2 rounded-xl  bg-white"><i class="fa-brands fa-notion"></i></span>
     <span><h1 class=" text-lg text-start md:text-2xl hover:underline hover:cursor-pointer font-medium">Notion</h1>
     <p class="hidden md:block">Your AI Workspace</p>
@@ -40,9 +40,9 @@
     </span>
     </div>
     </div>
-</div><br><br>
+</div><br><br class="hidden md:block">
 <hr class="text-slate-300">
-<div class="m-2 flex flex-wrap justify-center gap-2">
+<div class="m-2 flex flex-wrap justify-center gap-0.5 md:gap-2">
 <button class="bg-blue-500 hover:bg-blue-600 hover:cursor-pointer text-xl text-white px-8 py-2 w-140 rounded-xl"><a href="https://www.notion.com/download">Download App</a></button>
 <button @click="LoginPage" class=" hover:bg-slate-300 hover:cursor-pointer text-xl text-blue-500 bg-slate-200 px-8 py-2 w-140 rounded-xl">Log in</button>
 </div>
