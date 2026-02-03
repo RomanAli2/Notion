@@ -1,4 +1,7 @@
 <template>
+    <SideBar/>
     </template>
-    <script>
+    <script setup>
+import SideBar from './SideBar.vue';
+
 </script>

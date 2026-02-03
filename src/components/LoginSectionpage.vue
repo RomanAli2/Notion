@@ -54,16 +54,32 @@
         </div>
 <br>
         <div class="text-slate-500 text-xs md:text-xl ">
-            For Demo Enter this Email <b>notion009@gamil.com</b>
+            For Demo Enter this Email <b>notion009@gmail.com</b>
         </div><br>
         <div class="flex flex-col mt-3">
-            <input class="md:w-115 w-70 p-2 py-2 outline outline-slate-500 rounded-md" placeholder="Enter email" type="email">
-       <button class="md:w-115 w-70 py-2 mt-4 p-2 hover:bg-blue-600 bg-blue-500 text-white text-center rounded-md">Enter</button>
+            <input v-model="UserEmail" class="md:w-115 w-70 p-2 py-2 outline outline-slate-500 rounded-md" placeholder="Enter email" type="email">
+       <button @click="LoginBtn" class="md:w-115 w-70 py-2 mt-4 p-2 hover:bg-blue-600 bg-blue-500 text-white text-center rounded-md">Enter</button>
         </div>
     </div>
     
 
 </template>
 <script setup>
-
+import { router } from '../router';
+import { ref } from 'vue';
+const UserEmail=ref("");
+function DashboardGo(){
+  router.push("Dashboardpage")
+}
+function LoginBtn(){
+  if(UserEmail.value==="notion009@gmail.com"){
+  DashboardGo()
+}
+else if(UserEmail.value===""){
+  alert("Please Enter Email")
+}
+else{
+  alert(`${UserEmail.value} is Invalid Email`)
+}
+}
 </script>
