@@ -1,5 +1,5 @@
 <template>
-  <div v-if="trogelmode"  class="absolute left-0 top-0 w-70    h-screen flex flex-col items-center text-start border-r-slate-400 border-r shadow shadow-slate-400 overflow-hidden  overflow-y-scroll bg-slate-100">
+  <div v-if="trogelmode"  class="absolute left-0 top-0 w-70 backdrop-blur-lg z-50  h-screen flex flex-col items-center text-start border-r-slate-400 border-r shadow shadow-slate-400 overflow-hidden  overflow-y-scroll bg-slate-100">
     <div class="p-2 text-xl flex flex-col mt-2 gap-3">
         <span class=" cursor-pointer text-xl font-medium md:text-2xl"><h1 class="text-xl hover:bg-slate-200 px-9 py-2 rounded-lg text-slate-600"><i class="fa-brands fa-notion mr-2"></i>Notion Space's</h1></span>
        <div class="flex flex-col gap-1">
@@ -48,7 +48,7 @@
        </div>
     </div>
 </div>
-  <div class="block md:hidden absolute " :class="trogelmode?'right-0.5':'left-0.5'">
+  <div class="block md:hidden absolute z-50 top-8 " :class="trogelmode?'right-0.5':'left-0.5'">
         <button @click="trogelmodebtn" class="z-50 hover:bg-slate-200 m-2 cursor-pointer px-2 py-1 rounded-lg">
             <i :class="trogelmode?'fa-solid fa-xmark':'fa-solid fa-bars'"></i>
         </button>
@@ -59,11 +59,11 @@
 import Notionfree from './notionfree.vue';
 import { ref,onMounted } from 'vue';
 const privateDiv=[
-    {icon:"fa-solid fa-hand",title:"Welcome to Notion"},
+    {icon:"fa-solid fa-hand",title:"Welcome back"},
     {icon:"fa-solid fa-plus",title:"Add new", action:AddPrivate}
 ]
 const TeamSpaceDiv=[
-    {icon:"fa-solid fa-home",title:"Notion Space's HQ"
+    {icon:"fa-solid fa-home",title:"Notion Space's"
     },
     {icon:"fa-solid fa-plus",title:"Add new", }
 ]
