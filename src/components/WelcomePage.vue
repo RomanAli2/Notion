@@ -41,13 +41,13 @@
          </p>
  
          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-           <div class="p-4 border hover:bg-slate-100 border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition group">
+           <div class="p-4 border hover:bg-slate-100 border-gray-200 rounded-xl  cursor-pointer transition group">
              <h3 class="font-semibold mb-1 flex items-center gap-2">
                <span>🚀</span> Getting Started
              </h3>
              <p class="text-sm text-gray-500">Learn the basics of how Notion works.</p>
            </div>
-           <div class="p-4 border hover:bg-slate-100 border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition">
+           <div class="p-4 border hover:bg-slate-100 border-gray-200 rounded-xl cursor-pointer transition">
              <h3 class="font-semibold mb-1 flex items-center gap-2">
                <span>📂</span> Project Management
              </h3>

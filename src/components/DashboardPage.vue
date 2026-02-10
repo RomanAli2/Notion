@@ -1,9 +1,7 @@
 <template>
     <SideBar/>
-    <WelcomePage/>
+<RouterView/>
     </template>
     <script setup>
 import SideBar from './SideBar.vue';
-import WelcomePage from './WelcomePage.vue';
-
 </script>
