@@ -7,7 +7,7 @@
 
          <span @click="Pushhomepage" class="  cursor-pointer"><h1 class=" hover:bg-slate-200 px-5 py-2 rounded-lg text-slate-600"><i class="fa-solid fa-home mr-2"></i>Home Page</h1></span>
 
-          <span class="  cursor-pointer"><h1 class=" hover:bg-slate-200 px-5 py-2 rounded-lg text-slate-600"><i class="fa-solid fa-handshake mr-2"></i>Meetings</h1></span>
+          <span @click="PushMettingpage" class="  cursor-pointer"><h1 class=" hover:bg-slate-200 px-5 py-2 rounded-lg text-slate-600"><i class="fa-solid fa-handshake mr-2"></i>Meetings</h1></span>
 
           
           <span class="  cursor-pointer"><h1 class=" hover:bg-slate-200 px-5 py-2 rounded-lg text-slate-600"><i class="fa-solid fa-user-astronaut mr-2"></i>Notion AI</h1></span>
@@ -100,5 +100,8 @@ function Pushhomepage(){
 function WelcomePagePush(){
     router.push('/DashboardPage/WelcomePage')
 
+}
+function PushMettingpage(){
+    router.push('/DashboardPage/mettingPage')
 }
 </script>

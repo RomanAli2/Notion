@@ -8,7 +8,7 @@ import FooterPage from '../components/FooterPage.vue';
 import DashboardPage from '../components/DashboardPage.vue';
 import sidebarHomePage from '../components/sidebarHomePage.vue';
 import WelcomePage from '../components/WelcomePage.vue';
-
+import mettingPage from '../components/mettingPage.vue';
 // Combine all routes
 const routes = [
   { path: '/', component: Home },
@@ -21,7 +21,8 @@ const routes = [
     component: DashboardPage,
     children: [  
       { path: 'sidebarHomePage', component: sidebarHomePage },
-      { path: 'WelcomePage', component: WelcomePage }
+      { path: 'WelcomePage', component: WelcomePage },
+      { path: 'mettingPage', component: mettingPage }
     ]
   }
 ];
