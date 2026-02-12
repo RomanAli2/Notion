@@ -54,7 +54,7 @@ import { router } from '../router';
 import { ref } from 'vue';
 const UserEmail=ref("");
 function DashboardGo(){
-  router.push("/DashboardPage/sidebarHomePage'age")
+  router.push("/DashboardPage/sidebarHomePage'")
 }
 function LoginBtn(){
   if(UserEmail.value==="notion009@gmail.com"){
