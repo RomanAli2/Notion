@@ -9,6 +9,8 @@ import DashboardPage from '../components/DashboardPage.vue';
 import sidebarHomePage from '../components/sidebarHomePage.vue';
 import WelcomePage from '../components/WelcomePage.vue';
 import mettingPage from '../components/mettingPage.vue';
+import NotionAIPage from '../components/NotionAIPage.vue';
+import SearchSidebarPAge from '../components/SearchSidebarPAge.vue';
 // Combine all routes
 const routes = [
   { path: '/', component: Home },
@@ -22,7 +24,10 @@ const routes = [
     children: [  
       { path: 'sidebarHomePage', component: sidebarHomePage },
       { path: 'WelcomePage', component: WelcomePage },
-      { path: 'mettingPage', component: mettingPage }
+      { path: 'mettingPage', component: mettingPage },
+        { path: 'NotionAIPage', component: NotionAIPage },
+        { path: 'SearchSidebarPAge', component: SearchSidebarPAge },
+
     ]
   }
 ];
