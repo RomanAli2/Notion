@@ -1,5 +1,5 @@
 <template>
-  <div v-if="trogelmode"  class="fixed left-0 top-0 z-50 w-70 backdrop-blur-lg  h-screen flex flex-col items-center text-start border-r-slate-400 border-r shadow shadow-slate-400  overflow-hidden  overflow-y-scroll bg-slate-100">
+  <div v-if="trogelmode"  class="fixed left-0 top-0 z-50 w-70 backdrop-blur-lg  h-screen flex flex-col items-center text-start border-r-slate-400 border-r shadow shadow-slate-400  overflow-hidden  overflow-y-scroll scrollbar-thin  bg-slate-100/70">
     <div class="p-2  text-xl flex flex-col mt-2 gap-3">
         <span class=" cursor-pointer text-xl font-medium md:text-2xl"><h1 class="text-xl hover:bg-slate-200 px-9 py-2 rounded-lg text-slate-600"><i class="fa-brands fa-notion mr-2"></i>Notion Space's</h1></span>
        <div class="flex flex-col gap-1">
@@ -48,8 +48,8 @@
        </div>
     </div>
 </div>
-  <div class="block md:hidden absolute z-50 top-8 " :class="trogelmode?'right-0.5':'left-0.5'">
-        <button @click="trogelmodebtn" class="z-50 hover:bg-slate-200 m-2 cursor-pointer px-2 py-1 rounded-lg">
+  <div class="block md:hidden absolute z-50 top-11 " :class="trogelmode?'right-0.5':'left-0.5'">
+        <button @click="trogelmodebtn" class="z-50 bg-slate-100 hover:bg-slate-200 m-2 cursor-pointer px-2 py-1 rounded-lg">
             <i :class="trogelmode?'fa-solid fa-xmark':'fa-solid fa-bars'"></i>
         </button>
     </div>
@@ -95,13 +95,21 @@ onMounted(() => {
 });
 function Pushhomepage(){
     router.push('/DashboardPage/sidebarHomePage')
+    if(window.innerWidth<768){
+        trogelmodebtn()
+    }
 
 }
 function WelcomePagePush(){
     router.push('/DashboardPage/WelcomePage')
-
+ if(window.innerWidth<768){
+        trogelmodebtn()
+    }
 }
 function PushMettingpage(){
     router.push('/DashboardPage/mettingPage')
+     if(window.innerWidth<500){
+        trogelmodebtn()
+    }
 }
 </script>

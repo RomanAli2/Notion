@@ -12,7 +12,7 @@
 </header>
 <div class="animation transition-all top-20 w-full fixed bg-white " v-if="trogelmode">
 <div class="" >
-    <div class="flex flex-col justify-start gap-2 md:gap-7 m-2 p-8 font-medium text-3xl">
+    <div class="flex flex-col justify-start gap-2 md:gap-7 m-2 p-8 font-medium text-xl md:text-3xl">
         <h1>Products<i class="fa-solid fa-angle-down text-xl"></i></h1>
         <h1>AI<i class="fa-solid fa-angle-down text-xl"></i></h1>
         <h1>Solutions<i class="fa-solid fa-angle-down text-xl"></i></h1>
@@ -25,12 +25,12 @@
 
     
 <div class="bg-slate-200/95 md:items-center  m-4 flex-col md:flex-row   md:gap-80 gap-0   flex items-start w-auto h-50 md:h-50 rounded-3xl">
-    <div class="flex gap-2 items-center m-4 "><span class="text-2xl md:text-7xl p-2 rounded-xl  bg-white"><i class="fa-brands fa-notion"></i></span>
+    <div class="flex gap-1 items-center m-4 "><span class="text-2xl md:text-7xl p-2 rounded-xl  bg-white"><i class="fa-brands fa-notion"></i></span>
     <span><h1 class=" text-lg text-start md:text-2xl hover:underline hover:cursor-pointer font-medium">Notion</h1>
     <p class="hidden md:block">Your AI Workspace</p>
     </span>
     </div>
-    <div class="flex flex-col gap-3 m-4">
+    <div class="flex flex-col gap-2 m-4">
      <div class="flex gap-2 items-center"><span class="text-2xl p-2 rounded-xl  bg-white"><i class="fa-regular fa-calendar"></i></span>
     <span><h1 class=" text-lg  hover:underline hover:cursor-pointer font-medium">Notion Celender</h1>
     </span>
